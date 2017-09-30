@@ -18,7 +18,9 @@ services:
     image: collabora/code
     cap_add:
     - MKNOD
-    env_file:
-    - ./env
+    environment:
+    - domain
+    - username
+    - password
     networks:
     - back
